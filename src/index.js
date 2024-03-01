@@ -6,6 +6,8 @@ import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import { store } from './utils/store';
 
+
+const heading = React.createElement("h1",{},"Hello world from heading");
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Provider store={store}>
@@ -13,6 +15,7 @@ root.render(
     <App />
   </React.StrictMode>
   </Provider>
+  // heading
 );
 
 // If you want to start measuring performance in your app, pass a function
