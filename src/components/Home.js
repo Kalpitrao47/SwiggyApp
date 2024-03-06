@@ -9,7 +9,7 @@ import ResCards2 from "./ResCards2";
 
 const Home = () => {
   const data = useSelector((store) => store.data.data);
-  // console.log("Home_Data", data);
+  console.log("Home_Data", data);
 
   const ImageCardsId = data[0]?.card?.card?.imageGridCards?.info;
   // console.log("ImageCardsId", ImageCardsId);
@@ -26,6 +26,7 @@ const Home = () => {
     <div className=" invisible-scrollbar overflow-scroll w-[80%] m-auto">
       <div className="flex  w-[70%] ">
       {ImageCardsId?.map((image) => {
+        console.log(image.action.link)
         return (
           // <div className="w-[50%] h-56  border border-black">
             <img className="h-56 cursor-pointer"
